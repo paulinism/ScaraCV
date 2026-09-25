@@ -1,0 +1,37 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Captured photos (regenerated each run)
+photo_*.jpg
+
+# Local backup logs — these are per-machine transactional data, not code
+logs/*.jsonl
+PnP_App/detections/
+
+# Raw / auto-generated datasets (large, regenerable via auto_annotate.py)
+Preannotate/auto_images/
+Preannotate/auto_labels/
+Preannotate/auto_preview/
+Preannotate/dataset/
+Preannotate/Fotos_figuritas.zip
+
+# Redundant/large files not part of this repo
+PnP_App.zip
+2203.10939.pdf
+ImageClasifYolo/
+Training_Yael/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment secrets (Convex URL/keys, SMTP, etc.)
+.env
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
