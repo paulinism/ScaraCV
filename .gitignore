@@ -14,11 +14,20 @@ logs/*.jsonl
 PnP_App/detections/
 
 # Raw / auto-generated datasets (large, regenerable via auto_annotate.py)
-Preannotate/auto_images/
-Preannotate/auto_labels/
-Preannotate/auto_preview/
-Preannotate/dataset/
+Preannotate/auto_images/*
+Preannotate/auto_labels/*
+Preannotate/auto_preview/*
+Preannotate/dataset/*
+Preannotate/runs/*
 Preannotate/Fotos_figuritas.zip
+Preannotate/yolo11n.pt
+
+# Mantener las carpetas en el repo (vacías)
+!Preannotate/auto_images/.gitkeep
+!Preannotate/auto_labels/.gitkeep
+!Preannotate/auto_preview/.gitkeep
+!Preannotate/dataset/.gitkeep
+!Preannotate/runs/.gitkeep
 
 # Redundant/large files not part of this repo
 PnP_App.zip
