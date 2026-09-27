@@ -11,7 +11,8 @@ photo_*.jpg
 
 # Local backup logs — these are per-machine transactional data, not code
 logs/*.jsonl
-PnP_App/detections/
+PnP_App/detections/*
+!PnP_App/detections/.gitkeep
 
 # Raw / auto-generated datasets (large, regenerable via auto_annotate.py)
 Preannotate/auto_images/*
@@ -28,6 +29,10 @@ Preannotate/yolo11n.pt
 !Preannotate/auto_preview/.gitkeep
 !Preannotate/dataset/.gitkeep
 !Preannotate/runs/.gitkeep
+
+# Solo subir entrenar.py de Preannotate (ignorar los demás .py)
+Preannotate/*.py
+!Preannotate/entrenar.py
 
 # Redundant/large files not part of this repo
 PnP_App.zip
